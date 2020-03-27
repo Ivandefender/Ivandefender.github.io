@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300&display=swap');
+.block-span{
+    font-family: 'Ubuntu', sans-serif;
+    color: #c8c3b9;
+    font-size: 14px;
+
+}
+.text{
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+    font-size: 30px;
+}
+.infa{
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+    font-size: 14px;
+
+}
+.btn button{
+    width: 165px;
+    height: 60px;
+    font-family: 'Playfair Display', serif;
+    background-color: white;
+    font-size: 20px;
+    color: #707070;
+    border: 2px solid #626262;
+
+
+}
