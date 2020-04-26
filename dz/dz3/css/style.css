@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300&display=swap');
 html,body{
-    margin:0px 100px 0px 100px;
+    margin:0px 120px 0px 120px;
     padding: 0;
 }
 .block-span{
@@ -67,4 +67,8 @@ html,body{
 }
 .top{
     margin-top:70px;
+}
+img{
+    width: 470px;
+    height: 310px;
 }
