@@ -1,5 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold/Montserrat-ExtraBold.eot');
+    src: url('../fonts/Montserrat-Bold/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Bold/Montserrat-ExtraBold.woff') format('woff'),
+        url('../fonts/Montserrat-Bold/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat-Regular/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Regular/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat-Regular/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab Regular';
+    src: url('../fonts/RobotoSlab-Regular/RobotoSlab-Regular.eot');
+    src: url('../fonts/RobotoSlab-Regular/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Regular/RobotoSlab-Regular.woff') format('woff'),
+        url('../fonts/RobotoSlab-Regular/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'Droid Serif Italic';
@@ -10,12 +37,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'WisdomScript';
     font-style: normal;
     font-weight: normal;
-    src:url('../fonts/WisdomScript/Wisdom Script AJ.woff') format('woff');
+    src: url('../fonts/WisdomScript/Wisdom Script AJ.woff') format('woff');
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -26,8 +55,18 @@
 }
 
 .container {
-    width: 55%;
-    margin: 0px 0px 30px 450px;
+    width: 67%;
+}
+
+.text-up {
+    display: flex;
+    justify-content: center;
+}
+
+.text-up .container {
+    flex-direction: column;
+    align-items: center;
+    width: 58%;
 }
 
 .form-wrapper {
@@ -36,7 +75,7 @@
     justify-content: center;
 }
 
-.form-wrapper .container-two {
+.form-wrapper .container {
     flex-direction: column;
     align-items: center;
     display: flex;
@@ -53,7 +92,7 @@
     display: flex;
     justify-content: center;
     margin-top: 110px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Bold', sans-serif;
     margin-bottom: 25px;
 
 }
@@ -81,7 +120,7 @@
 input {
     padding-left: 20px;
     color: #bbbbbb;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Bold', sans-serif;
     font-size: 14px;
     border-radius: 5px 5px 5px 5px;
     border: none;
@@ -94,7 +133,7 @@ textarea {
     padding-left: 20px;
     padding-top: 20px;
     color: #bbbbbb;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Bold', sans-serif;
     font-size: 15px;
     border-radius: 5px 5px 5px 5px;
     border: none;
@@ -109,7 +148,7 @@ textarea {
     justify-content: center;
     width: 240px;
     height: 65px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Bold', sans-serif;
     color: white;
     background-color: #fed136;
     font-size: 15px;
@@ -133,7 +172,7 @@ nav {
 
 .links {
     width: 45.66%;
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 .ul-list {
@@ -141,8 +180,8 @@ nav {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    font-family: 'Montserrat Regular', sans-serif;
-    font-weight: 900;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 1000;
 }
 
 a {
@@ -170,7 +209,7 @@ a:hover {
 
 .zag {
     color: #222222;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Bold', sans-serif;
     margin-bottom: 25px;
 
 }
@@ -209,7 +248,7 @@ a:hover {
 
 .big-text {
     color: #222222;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Bold', sans-serif;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -218,10 +257,11 @@ a:hover {
 
 .small-text {
     color: #777777;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Roboto Slab Regular', sans-serif;
     display: flex;
     justify-content: center;
     text-align: center;
+    line-height: 24px;
 }
 
 .btn {
