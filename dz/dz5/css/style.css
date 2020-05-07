@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+@font-face {
+    font-family: 'Droid Serif Italic';
+    src: url('../fonts/DroidSerif-Italic/DroidSerif-Italic.eot');
+    src: url('../fonts/DroidSerif-Italic/DroidSerif-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DroidSerif-Italic/DroidSerif-Italic.woff') format('woff'),
+        url('../fonts/DroidSerif-Italic/DroidSerif-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WisdomScript';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../fonts/WisdomScript/Wisdom Script AJ.woff') format('woff');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-us {
+    width: 100%;
+}
+
+.container {
+    width: 55%;
+    margin: 0px 0px 30px 450px;
+}
+
+.form-wrapper {
+    background-image: url(../img/map.png);
+    display: flex;
+    justify-content: center;
+}
+
+.form-wrapper .container-two {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 25px;
+
+}
+
+.text {
+    color: #777777;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: "Droid Serif Italic";
+}
+
+.pole {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.pole2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+input {
+    padding-left: 20px;
+    color: #bbbbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    width: 460px;
+    height: 54px;
+    margin-top: 30px;
+}
+
+textarea {
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #bbbbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    resize: none;
+    width: 460px;
+    height: 205px;
+    margin-top: 30px;
+}
+
+.sub {
+    display: flex;
+    justify-content: center;
+    width: 240px;
+    height: 65px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #fed136;
+    font-size: 15px;
+    padding: 0;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 115px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.log {
+    color: #fed136;
+    font-size: 50px;
+    font-family: 'WisdomScript';
+}
+
+.links {
+    width: 45.66%;
+    margin-top: 18px;
+}
+
+.ul-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: #222222;
+}
+
+a:hover {
+    color: #fed136;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.gol {
+    font-family: "Droid Serif Italic";
+    color: #777777;
+}
+
+.zag {
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 25px;
+
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.item {
+    width: 30%;
+    margin: 50px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.item-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+.item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.item-description p {
+    margin: 0 0 20px 0;
+}
+
+.big-text {
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.small-text {
+    color: #777777;
+    font-family: 'Roboto Slab', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
