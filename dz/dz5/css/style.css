@@ -66,7 +66,7 @@
 .text-up .container {
     flex-direction: column;
     align-items: center;
-    width: 58%;
+    width: 67%;
 }
 
 .form-wrapper {
@@ -166,7 +166,7 @@ nav {
 
 .log {
     color: #fed136;
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'WisdomScript';
 }
 
@@ -178,7 +178,7 @@ nav {
 .ul-list {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
     font-family: 'Montserrat-Regular', sans-serif;
     font-weight: 1000;
