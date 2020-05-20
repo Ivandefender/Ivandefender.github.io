@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold/Montserrat-ExtraBold.eot');
+    src: url('../fonts/Montserrat-Bold/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Bold/Montserrat-ExtraBold.woff') format('woff'),
+        url('../fonts/Montserrat-Bold/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light/Roboto-Light.eot');
+    src: url('../fonts/Roboto-Light/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Light/Roboto-Light.woff') format('woff'),
+    url('../fonts/Roboto-Light/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+* {
+    margin: 0;
+    padding: 0;
+}
+.card{
+    width: 100%;
+    background-image: url(../img/people.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    
+}
+.people{
+    display: flex;
+    justify-content: center;
+
+    
+}
+.container{
+    width: 84.374vw;
+}
+.up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 20px;  
+}
+.header-h5{
+    color: white;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 120px;
+}
+.header-buttons{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.login{
+    color: white;
+    font-family: 'Montserrat-Bold', sans-serif;
+    text-decoration: none;
+}
+.signin{
+    color: white;
+    font-family: 'Montserrat-Bold', sans-serif;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin-left: 20px;
+}
+.partner-h1{
+    color: white;
+    font-family: 'Montserrat-Bold', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.partner-p{
+    color: white;
+    font-family: 'Roboto-Light', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.partner-button{
+    display: flex;
+    justify-content: center;
+}
+.partner-button-btn{
+    background-color: #ff4e50;
+    border-radius: 20px;
+    border: 0px;
+    padding: 10px 40px;
+    width: 280px;
+    max-width: 280px;
+    color: white;
+    font-family: 'Montserrat-Bold', sans-serif;
+    margin-bottom: 140px;
+}
+@media screen and (min-width: 768px){
+    .up{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 120px;
+    }
+    .item{
+        width: 50%;
+
+    }
+    .header-buttons{
+        font-size: 14px;
+    }
+    .header-h5{
+        margin-top: 35px;
+    }
+    .position__people-two{
+        display: flex;
+    }
+}
+@media screen and (min-width: 1440px){
+    .up{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 120px;
+    }
+    .item{
+        width: 25%;
+    }
+    .container{
+        width: 65.277vw;
+    }
+    .header-h5{
+        margin-top: 35px;
+    }
+    .position-people{
+        display: flex;
+    }
+
+}
+.promo-h3{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+.item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+
+}
+
+.item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.item-description p {
+    margin: 0 0 25px 0;
+}
+
+.big-text {
+    color: #333333;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.small-text {
+    color: #8f8f8f;
+    font-family: 'Roboto-Light', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 20px;
+    
+}
+.promo-h3-partner{
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: #333333;
+    font-size: 22px;
+
+}
+.btn{
+    display: flex;
+    justify-content: center;  
+}
+.btn-partners{
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #ff4e50;
+    padding: 10px 40px;
+    width: 280px;
+    max-width: 280px;
+    color: #ff4e50;
+    font-family: 'Montserrat-Bold', sans-serif;
+    margin-bottom: 55px;
+
+}
+
