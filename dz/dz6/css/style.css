@@ -124,6 +124,7 @@
     .position__people-two{
         display: flex;
     }
+
 }
 @media screen and (min-width: 1440px){
     .up{
