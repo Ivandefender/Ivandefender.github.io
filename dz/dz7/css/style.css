@@ -17,7 +17,7 @@
 }
 
 .container {
-    width: 90.625vw;
+    width: 90.625%;
 
 }
 
@@ -40,6 +40,7 @@ nav {
 
 .logo {
     font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     font-size: 22px;
     color: #1ab798;
 }
@@ -52,21 +53,25 @@ nav {
     margin: 30px 0px 35px 0px;
 }
 
-/* .links-style{
+
+.links-style{
     color: #7e7c7e;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 15px;
+    display: none;
     
 
 }
 .links-style__hover:hover{
     color: #282528;
+    display: none;
 }
 li{
     list-style-type: none;
+    display: none;
 
-}   */
+}  
 .header-content__mobile {
     color: white;
     font-family: 'Raleway', sans-serif;
@@ -219,7 +224,7 @@ li{
 .bg-color__blue {
     background-color: #31d4e7;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     margin-top: 60px;
     display: flex;
     align-items: center;
@@ -632,4 +637,120 @@ textarea {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     margin-bottom: 30px;
+}
+@media screen and (min-width: 768px){
+    .links-style{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .links-style__hover:hover{
+        display: block; 
+    }
+    li{
+        display: block;
+        margin-left: 30px; 
+    }  
+    .links-style__burger{
+        display: none;
+    }
+    .container{
+        width: 92.307%;
+    }
+    .logo {
+        font-size: 30px;
+        
+    }
+    .header-content__mobile{
+        font-size: 42px;
+
+    }
+    .header-content__small{
+        font-size: 22px;
+        margin-bottom: 55px;
+    }
+    .content-arrow{
+        font-size: 16px;
+    }
+    .button_download{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 60px;
+    }
+    .header-telephones{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .second-section__blue-text{
+        font-size: 28px;
+    }
+    .second-section__grey-line{
+        max-width: 60px;
+        margin: 0px 70px 0px 70px;
+    }
+    .second-section__text{
+        font-size: 18px;
+        margin-top: 75px;
+        
+    }
+    .second-section__text-width{
+        width: 88.983%;
+    }
+    .item{
+        width: 33.333%;
+    }
+    .video-h4{
+        font-size: 28px;
+        margin-top: 105px;
+    }
+    .video-p{
+        font-size: 16px;
+        width: 74.858%;
+        font-weight: 400;
+    }
+    .video-images{
+        margin: 30px 250px 60px 250px;
+    }
+    iframe{
+        width: 500px;
+        height: 305px;
+        margin-bottom: 105px;
+
+    }
+    .third-section__text{
+        font-size: 16px;
+    }
+    .third-section__text-width{
+        width: 77.683%;
+        margin: 50px 0px 50px 0px;
+    }
+    .team-card__first-man{
+        width: 38.135%;
+        height: 300px;
+    }
+    .team-card__woman{
+        width: 38.135%;
+        height: 300px;
+    }
+    .team-card__second-man{
+        width: 38.135%;
+        height: 300px;
+    }
+    .team-card__third-man{
+        width: 38.135%;
+        height: 300px;
+    }
+    .team-card__color{
+        width: 100%;
+        height: 100%;
+    }
+   
+    
+    
+
+    
+    
 }
