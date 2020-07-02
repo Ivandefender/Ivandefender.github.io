@@ -990,12 +990,12 @@ textarea {
         align-items: flex-end;
     }
     input{
-        width: 23.017vw;
+        width: 23.3vw;
         margin-top: 110px;
         margin: 100px 0px 0px 25px;
     }
     textarea{
-        width: 49.218vw;
+        width: 50.218vw;
         
     }
     .form-field__submit-button{
