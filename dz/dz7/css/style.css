@@ -28,6 +28,7 @@ header {
     align-items: center;
     background-image: url(../img/burger.png);
     background-size: cover;
+    position: relative;
     
 }
 
@@ -134,6 +135,11 @@ li{
 }
 .header-telephones{
     display: none;
+    position: absolute;
+}
+.header-telephones__dekstop{
+    display: none;
+    position: absolute;
 }
 .second-section {
     display: flex;
@@ -627,7 +633,7 @@ textarea {
 }
 
 .form-social__network-icon {
-    margin: 0px 16px 0px 16px;
+    margin: 0px 16px 0px 0px;
 }
 
 .form-social__number {
@@ -709,13 +715,6 @@ textarea {
         align-items: center;
         margin-top: 60px;
     }
-    .header-telephones{
-        display: block;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        display: none;
-    }
     .second-section__blue-text{
         font-size: 21px;
 
@@ -726,8 +725,11 @@ textarea {
     }
     .second-section__text{
         font-size: 18px;
-        margin-top: 75px;
         
+        
+    }
+    .second-section__line-text{
+        margin-top: 50px;
     }
     .second-section__text-width{
         width: 88.983%;
@@ -852,14 +854,17 @@ textarea {
 
    }
    .form-line__text-white-line{
-    max-width: 80px;
-    height: 1px;
-}
-
+        max-width: 80px;
+        height: 1px;
     
-    
+} 
+    .header-telephones{
+        display: block;
+        left: 450px;
+        top: 350px;
+    }
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1200px){
     .container{
         width: 95.416%;
     }
@@ -898,19 +903,19 @@ textarea {
         
     }
     .team-card__first-man{
-        width: 70%;
+        width: 78%;
         height: 300px;
     }
     .team-card__woman{
-        width: 70%;
+        width: 78%;
         height: 300px;
     }
     .team-card__second-man{
-        width: 70%;
+        width: 78%;
         height: 300px;
     }
     .team-card__third-man{
-        width: 70%;
+        width: 78%;
         height: 300px;
     }
     .item-description p{
@@ -962,6 +967,9 @@ textarea {
         display: flex;
         justify-content: flex-start;
     }
+    .video-text{
+        margin-top: 35px;
+    }
     .video{
         display: flex;
         justify-content: flex-end;
@@ -983,8 +991,8 @@ textarea {
     }
     input{
         width: 23.017vw;
-        margin-top: 120px;
-        margin: 110px 0px 0px 25px;
+        margin-top: 110px;
+        margin: 100px 0px 0px 25px;
     }
     textarea{
         width: 49.218vw;
@@ -999,5 +1007,37 @@ textarea {
         display: flex;
         justify-content: flex-end;
     }
+    .form-social{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .form-social__p{
+        text-align: left;
+
+    }
+    .item-column{
+        width: 40%;
+        margin-left: 110px;
+    }
+    .header-telephones{
+        display: none;
+    }
+    .header-telephones__dekstop{
+        display: block;
+        margin-left: 55vw;
+        top: 260px;
+    }
+    .second-section__line-text{
+        margin-top: 50px;
+    }
+    nav{
+        margin-bottom: 100px;
+    }
+    .links-style__hover{
+        margin-right: 20px;
+    }
+        
     
 }
