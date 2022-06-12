@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:regular,700);
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    /* background-color: #0C122C; */
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    background: URL(../img/bg1.png), #0C122C;
+    background-repeat: no-repeat;
+    background-position: left 0 top 120%;
+    background-size: 100%;
+}
+html{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 0;
+    width: 0;
+    height: 0;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper{  
+    width: 920px;
+    height: 201px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.fylo {
+    width: 350px;
+    height: 201px;
+    background: #1E2D69;
+    box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+    border-radius: 10px 100px 10px 10px;
+    padding: 40px;
+}
+.progressbar {
+    width: 540px;
+    height: 154px;
+    background: #1E2D69;
+    box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+}
+
+.fylo__logo {
+    width: 135px;
+    color: #fff;
+    margin-bottom: 33px;
+}
+.fylo__inner {
+    width: 176px;
+    display: flex;
+    justify-content: space-between;
+}
+.fylo__inner-item {
+    width: 48px;
+    height: 48px;
+    background: #0C122C;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressbar__text {
+    font-weight: 400;
+    line-height: 16px;
+    color: #DBD9FF;
+    margin-bottom: 16px;
+}
+
+span{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.progressbar__info-line {
+    background: rgba(12, 18, 44, 0.5);
+    border-radius: 10px;
+    width: 459px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    margin-bottom: 8px;
+}
+
+.progress__line-red {
+    opacity: 1;
+    width: 339px;
+    height: 14px;
+    background: linear-gradient(90deg, #FFA197 0%, #FF4A95 100%);
+    border-radius: 8px;
+    position: relative;
+}
+
+.progress__line-red::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    top: 2px;
+    right: 2px;
+}
+
+.progressbar__info-GB {
+    display: flex;
+    justify-content: space-between;
+    color: #DBD9FF;
+}
+
+.comment {
+    position: absolute;
+    width: 179px;
+    height: 94px;
+    text-align: right;
+    top: -50px;
+    right: 45px;
+
+}
+.rectangle {
+    width: 179;
+    height: 72px;
+    background: #FFFFFF;
+    box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+    border-radius: 10px 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    letter-spacing: 1px;
+    color: rgba(12, 18, 44, 0.5);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/* .rectangle__op{
+    mix-blend-mode: normal;
+    opacity: 0.5;
+} */
+
+.triangle {
+    /* opacity: 0; */
+    width: 24px;
+    border: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-right: 12px solid #fff;
+    display: inline-block;
+    /* position: absolute;
+    right: 4.5%;
+    top: -24px;
+    transform: translateX(50%);
+    transition: all 0.5s; */
+}
+
+.rectangle__big {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #0C122C;
+}
+
+@media(max-width: 375px){
+    body{
+        background: URL(../img/bg2.png);
+        background-position: left 100% top 0%;
+        background-size: cover;
+    }
+
+    .wrapper{  
+        width: 326px;
+        height: 377px;
+        flex-direction: column;
+    }
+    .fylo {
+        width: 326px;
+    }
+    .progressbar {
+        width: 326px;
+        height: 160px;
+        padding: 32px;
+    }  
+    .progressbar__text{
+        text-align: center;
+    }
+    .progressbar__info-line {
+        width: 262px;
+        margin-bottom: 10px;
+    }
+    .progress__line-red {
+        width: 193px;
+    }
+    .progressbar__info-GB {
+        display: flex;
+        justify-content: space-between;
+    }
+    .comment {
+        bottom: -55px;
+        top: auto;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .progressbar__info-GB span{
+        font-size: 12px;
+    }
+    .rectangle{
+        border-radius: 10px;
+    }
+    .triangle {
+        display: none;
+    }
+}
