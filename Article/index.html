@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="/img/smile.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+        <h1>lorem</h1>
+        <div class="wrapper">
+            <div class="wrapper__all">
+                <div class="wrapper__left">
+
+                </div>
+                <div class="wrapper__right">
+                    <div class="wrapper__right-up">
+                        Shift the overall look and feel by adding these wonderful touches to furniture in your home
+                    </div>
+                    <div class="wrapper__right-center">
+                        Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and
+                        uninviting. I’ve got some simple tips to help you make any room feel complete.
+                    </div>
+                    <div class="wrapper__right-bottom">
+                        <div class="wrapper__user">
+                            <div class="wrapper__user-name">
+                                <a href="#">Michelle Appleton</a>
+                            </div>
+                            <div class="wrapper__user-date">
+                                28 Jun 2020
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="wrapper__button">
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+                        <div class="triangle">
+
+                        </div>
+                        <div class="rectangle">
+                            <div class="rectangle__inner">
+                                <span>share</span>
+                                <a class="f"></a>
+                                <a class="t"></a>
+                                <a class="p"></a>
+                            </div>
+                        </div>
+                        <!-- <ion-icon name="logo-facebook"></ion-icon> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        $('.wrapper__button').on('click', function () {
+            $('.rectangle').toggleClass('show');
+            $('.triangle').toggleClass('show');
+        });
+        
+        // $('.wrapper__button').on('mouseout', function () {
+        //     $('.rectangle').toggleClass('show');
+        // });
+    </script>
+</body>
+
+</html>
