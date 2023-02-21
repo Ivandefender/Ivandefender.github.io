@@ -1,0 +1,719 @@
+$b:#0B0D17;
+$bl:#D0D6F9;
+$w: #FFFFFF;
+
+@import url(https://fonts.googleapis.com/css?family=Bellefair:regular);
+@import url(https://fonts.googleapis.com/css?family=Barlow+Condensed:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Barlow:regular);
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: $w;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.box {
+    max-width: 1440px;
+    height: 900px;
+    margin: 0 auto;
+    background-image: url(../img/bg/bg-home.jpg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 77px 0 165px;
+}
+
+.header {
+    padding: 40px 0 0 55px;
+    margin-bottom: 251px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__inner-logo {}
+
+    &__inner-menu {
+        display: flex;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+        width: 830px;
+        height: 96px;
+        padding: 38px 165px 0px 123px;
+        margin-left: auto;
+        position: relative;
+        .bbm{
+            display: none;
+        }
+    }
+
+    &__inner-menu::before {
+        content: '';
+        width: 473px;
+        height: 1px;
+        position: absolute;
+        right: 100%;
+        transform: translateX(30px);
+        top: 50%;
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+}
+
+
+
+.menu {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 542px;
+    }
+
+    &__list-item.active__link {
+        padding-bottom: 35px;
+        border-bottom: 3px solid $w;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    &__list-item:hover {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__list-item {
+        padding-bottom: 35px;
+        border-bottom: 3px solid transparent;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    &__list-link {}
+
+    &__list-numb {
+        font-family: 'Barlow Condensed';
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        margin-right: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__list-name {
+        font-family: 'Barlow Condensed';
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+
+    }
+}
+
+.space {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+        padding-bottom: 88px;
+    }
+
+    &__inner-info {
+        width: 445px;
+    }
+
+    &__inner-btn {
+        box-sizing: content-box;
+        width: 274px;
+        height: 274px;
+        background-color: #FFFFFF;
+        background-clip: padding-box;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Bellefair';
+        font-size: 32px;
+        line-height: 37px;
+        letter-spacing: 2px;
+        color: #0B0D17;
+        text-transform: uppercase;
+        border: 88px solid transparent;
+        transition: all 0.5s;
+        position: absolute;
+        bottom: 0;
+        right: -88px;
+    }
+
+    &__inner-btn:hover {
+        border: 88px solid rgba(255, 255, 255, 0.1);
+    }
+
+
+}
+
+.info {
+
+    &__subtitle {
+        font-family: 'Barlow Condensed';
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+        color: #D0D6F9;
+        margin-bottom: 24px;
+
+    }
+
+    &__title {
+        font-family: 'Bellefair';
+        font-size: 150px;
+        line-height: 172px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-family: 'Barlow';
+        font-size: 18px;
+        line-height: 32px;
+        color: #D0D6F9;
+    }
+}
+
+// destination page
+
+.box.destination {
+    background-image: url(../img/bg/bg-destination.jpg);
+    background-size: cover;
+    .header {
+        margin-bottom: 76px;
+    }
+
+    .dest {
+
+        &__planet {}
+
+        &__planet-title {
+            font-family: 'Barlow Condensed';
+            font-size: 28px;
+            line-height: 34px;
+            letter-spacing: 4.725px;
+            text-transform: uppercase;
+            color: $w;
+            margin-bottom: 97px;
+
+            span {
+                font-weight: 700;
+                color: $w;
+                opacity: 0.25;
+                margin-right: 28px;
+            }
+        }
+
+        &__planet-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__planet-img {
+            width: 445px;
+            height: 445px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__planet-info {
+            width: 445px;
+        }
+    }
+
+    .moon {
+        background-image: url(../img/page-dest/moon.png);
+
+    }
+
+    .mars {
+        background-image: url(../img/page-dest/mars.png);
+    }
+
+    .europe {
+        background-image: url(../img/page-dest/europe.png);
+    }
+
+    .titan {
+        background-image: url(../img/page-dest/titan.png);
+    }
+
+    .info {
+
+        &__nav {}
+
+        &__nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 285px;
+        }
+
+        &__title {
+            font-family: 'Bellefair';
+            font-size: 100px;
+            line-height: 115px;
+            margin-bottom: 14px;
+        }
+
+        &__text {
+            padding-bottom: 54px;
+            border-bottom: 1px solid #383B4B;
+            margin-bottom: 28px;
+        }
+
+
+        &__data {
+            display: flex;
+            width: 344px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__data-distance {}
+
+        &__data-time {}
+    }
+
+    .menu {
+
+        &__item {
+            font-family: 'Barlow Condensed';
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2.7px;
+            text-transform: uppercase;
+            margin-bottom: 37px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid transparent;
+            transition: all 0.5s;
+        }
+
+        &__item:hover {
+            border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    .item {
+
+        &__active {
+            border-bottom: 3px solid $w;
+        }
+
+        &__active:hover {
+            border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+
+        }
+    }
+
+    .data-distance-title {
+        font-family: 'Barlow Condensed';
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+        text-transform: uppercase;
+        color: $bl;
+        margin-bottom: 12px;
+
+    }
+
+    .data-distance-text {
+        font-family: 'Bellefair';
+        font-size: 28px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: $w;
+
+    }
+
+    .data-time-title {
+        font-family: 'Barlow Condensed';
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+        text-transform: uppercase;
+        color: $bl;
+        margin-bottom: 12px;
+
+    }
+
+    .data-time-text {
+        font-family: 'Bellefair';
+        font-size: 28px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: $w;
+    }
+
+}
+
+.planet__padding {
+    padding-left: 64px;
+}
+
+//destination page
+
+
+
+
+//crew page
+
+
+.box.crew {
+    background-image: url(../img/bg/bg-crew.png);
+    overflow: hidden;
+    background-size: cover;
+
+
+    .header {
+        margin-bottom: 62px;
+    }
+
+    .crew {
+        position: relative;
+
+
+        &__title {
+            font-family: 'Barlow Condensed';
+            font-size: 28px;
+            line-height: 34px;
+            letter-spacing: 4.725px;
+            text-transform: uppercase;
+            color: $w;
+            position: absolute;
+            top: 14px;
+
+            span {
+                font-weight: 700;
+                color: $w;
+                opacity: 0.25;
+                margin-right: 24px;
+            }
+        }
+
+        &__slider {}
+
+        &__slider-item {
+            width: 100%;
+            height: 712px;
+            background-repeat: no-repeat;
+        }
+
+        &__dots {
+            position: absolute;
+            bottom: 94px;
+            width: 132px;
+        }
+
+
+        .commander {
+            background-image: url(../img/page-crew/item-1.png);
+            background-position: right 0 bottom -10px;
+        }
+
+        .specialist {
+            background-image: url(../img/page-crew/item-2.png);
+            background-position: right 0 bottom 0;
+        }
+
+        .pilot {
+            background-image: url(../img/page-crew/item-3.png);
+            background-position: right 0 bottom -27px;
+        }
+
+        .engineer {
+            background-image: url(../img/page-crew/item-4.png);
+            background-position: right 0 bottom -27px;
+        }
+
+        .item {
+
+            &__info {
+                padding-top: 202px;
+                width: 614px;
+            }
+
+            &__info-subtitle {
+                font-family: 'Bellefair';
+                font-size: 32px;
+                line-height: 37px;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.5);
+                margin-bottom: 15px;
+            }
+
+            &__info-title {
+                font-family: 'Bellefair';
+                font-size: 56px;
+                line-height: 64px;
+                text-transform: uppercase;
+                color: $w;
+                margin-bottom: 32px;
+
+            }
+
+            &__info-text {
+                font-size: 18px;
+                line-height: 32px;
+                color: $bl;
+                width: 444px;
+
+            }
+        }
+
+        .dots {
+            &__menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+
+            &__menu-item {
+
+                button {
+                    width: 15px;
+                    height: 15px;
+                    background: rgba(255, 255, 255, 0.17);
+                    border: none;
+                    border-radius: 50%;
+                    transition: all 0.2s;
+                }
+            }
+
+
+            &__menu-item:hover {
+
+                button {
+                    background: rgba(255, 255, 255, 0.5);
+                }
+            }
+
+            &__menu-item.active__item {
+                button {
+                    background: $w;
+                }
+            }
+
+
+
+        }
+    }
+}
+
+
+
+//crew page
+
+
+//technology page
+
+.box.technology {
+    background-image: url(../img/bg/bg-tech.jpg);
+    background-size: cover;
+    .header {
+        margin-bottom: 76px;
+    }
+
+    .tech {
+
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            width: 1275px;
+            margin-left: 165px;
+        }
+
+        &__title {
+            font-family: 'Barlow Condensed';
+            font-size: 28px;
+            line-height: 34px;
+            letter-spacing: 4.725px;
+            text-transform: uppercase;
+            color: $w;
+            position: static;
+            top: 0px;
+            margin-bottom: 26px;
+
+            span {
+                font-weight: 700;
+                color: $w;
+                opacity: 0.25;
+                margin-right: 24px;
+            }
+        }
+
+        &__dots {
+            padding-top: 111px;
+        }
+
+        &__slider {
+            width: 1115px;
+            
+        }
+
+
+        &__slider-item {
+            height: 527px;
+
+        }
+    }
+
+    .dots {
+
+        &__menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            height: 304px;
+        }
+
+        &__menu-item {
+            
+
+            button {
+                width: 80px;
+                height: 80px;
+                border: 1px solid rgba(255, 255, 255, 0.25);
+                background-color: transparent;
+                border-radius: 50%;
+                font-family: 'Bellefair';
+                font-size: 32px;
+                line-height: 37px;
+                text-align: center;
+                letter-spacing: 2px;
+                color: $w;
+                transition: all 0.2s;
+            }
+        }
+
+        &__menu-item:hover {
+            button {
+                border: 1px solid #FFFFFF;
+
+            }
+        }
+    }
+
+
+    .active {
+
+        &__item {
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            border-radius: 50%;
+
+            button {
+                color: $b;
+            }
+        }
+    }
+
+    .vehicle {
+        background-image: url(../img/page-tech/item-1.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .spaceport{
+        background-image: url(../img/page-tech/item-2.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .capsule{
+        background-image: url(../img/page-tech/item-3.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .item {
+
+        &__info{
+            width: 470px;
+            padding-top: 111px;
+        }
+
+        &__subtitle {
+            font-family: 'Barlow Condensed';
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2.7px;
+            color: $bl;
+            margin-bottom: 11px;
+        }
+
+        &__title {
+            font-family: 'Bellefair';
+            font-size: 56px;
+            line-height: 64px;
+            color: $w;
+            margin-bottom: 17px;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 32px;
+            color: #D0D6F9;
+        }
+    }
+
+
+}
+
+//technology page
+
+
+//media-tablet
+
+@import "media-tablet";
+
+//media-tablet
+
+//media-mobile
+
+@import "media-mobile";
+
+//media-mobile
+

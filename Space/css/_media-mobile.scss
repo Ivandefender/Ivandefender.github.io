@@ -1,0 +1,471 @@
+@media (max-width: 400px) {
+    .box {
+        width: 375px;
+        height: 667px;
+        background-image: url(../img/bg/bg-home-mobile.jpg);
+        background-size: cover;
+    }
+
+    .container {
+        max-width: 327px;
+    }
+
+    //home page
+
+    .header {
+        padding: 24px 0 0 33px;
+        margin-bottom: 48px;
+        position: relative;
+
+        &__inner-menu {
+            position: absolute;
+            width: 254px;
+            height: 667px;
+            // padding: 39px 46px 0px 48px;
+            padding: 0;
+            margin-left: 0;
+            right: 0;
+            top: 0;
+            z-index: 999;
+            background: transparent;
+            backdrop-filter: none;
+            display: flex;
+            justify-content: flex-end;
+            transition: all 0.2s ease;
+            .bbm{
+                display: block;
+                position: absolute;
+                border: none;
+                background-color: transparent;
+                width: 24px;
+                height: 21px;
+                border-top: 3px solid #D0D6F9;
+                border-bottom: 3px solid #D0D6F9;
+                top: 34px;
+                right: 27px;
+            }
+            .bbm::before{
+                display: block;
+                position: absolute;
+                content: '';
+                width: 24px;
+                height: 2px;
+                background-color: #D0D6F9;
+                top: 7px;
+                left: 0;
+                
+            }
+        }
+
+        &__inner-logo img {
+            width: 40px;
+        }
+    }
+
+    .menu {
+
+
+        &__list {
+            display: none;
+            padding: 118px 0 0 32px;
+            
+        }
+
+        &__list-item.active__link {
+            border-bottom: 0px;
+            border-right: 3px solid $w;
+            padding-bottom: 9px;
+        }
+
+        &__list-item {
+            padding: 16px 0 16px 0;
+            border-bottom: 0px;
+            border-right: 3px solid transparent;
+        }
+
+        &__list-numb {
+            display: none;
+        }
+
+        &__list-name {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2.7px;
+            
+        }
+    }
+
+    .space {
+
+        &__inner {
+            width: 327px;
+        }
+
+        &__inner-info {
+            width: 327px;
+        }
+
+        &__inner-btn {
+            width: 150px;
+            height: 150px;
+            border: 40px solid transparent;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 1.25px;
+        }
+
+        &__inner-btn:hover {
+            border: 40px solid rgba(255, 255, 255, 0.1);
+        }
+
+
+    }
+
+    .info {
+
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2.7px;
+            margin-bottom: 16px;
+
+        }
+
+        &__title {
+            font-size: 80px;
+            line-height: 100px;
+            margin-bottom: 16px;
+        }
+
+        &__text {
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+    }
+
+    //home page
+
+    // destination page
+    .box.destination {
+        height: 850px;
+
+        .header {
+            margin-bottom: 24px;
+        }
+
+        .dest {
+
+            &__planet-title {
+                text-align: center;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 2.7px;
+                margin-bottom: 32px;
+
+                span {
+                    margin-right: 18px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 2.7px;
+                }
+            }
+
+
+            &__planet-img {
+                width: 150px;
+                height: 150px;
+                margin: 0 auto 26px;
+            }
+
+            &__planet-info {
+                width: 327px;
+
+            }
+        }
+
+        .info {
+
+            &__nav-menu {
+                width: 234px;
+            }
+
+            &__title {
+                font-size: 56px;
+                line-height: 64px;
+                margin-bottom: 0px;
+            }
+
+            &__text {
+                padding-bottom: 32px;
+                font-size: 15px;
+                line-height: 25px;
+                margin-bottom: 32px;
+            }
+
+
+            &__data {
+                width: 450px;
+                margin: 0 auto;
+            }
+
+            &__data {
+                display: block;
+                width: 223px;
+
+            }
+
+        }
+
+        .menu {
+
+            &__item {
+                margin-bottom: 20px;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 2.3625px;
+                padding-bottom: 8px;
+            }
+
+        }
+
+    }
+
+    .info__data-distance {
+        margin-bottom: 32px;
+    }
+
+    // destination page
+
+
+    //crew page
+
+    .box.crew {
+        height: 710px;
+
+        .header {
+            margin-bottom: 24px;
+        }
+
+        .crew {
+
+            &__title {
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 2.7px;
+                text-align: center;
+                margin-bottom: 32px;
+
+
+                span {
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 2.7px;
+                    margin-right: 16px;
+                }
+            }
+
+
+            &__slider-item {
+                height: 467px;
+                padding-top: 223px;
+            }
+
+            &__dots {
+                top: 287px;
+                width: 88px;
+            }
+
+
+            .commander {
+                background-image: url(../img/page-crew/item-1.png);
+                background-position: center top 5px;
+                background-size: 177px;
+            }
+
+            .specialist {
+                background-image: url(../img/page-crew/item-2.png);
+                background-position: right 0 bottom 0;
+            }
+
+            .pilot {
+                background-image: url(../img/page-crew/item-3.png);
+                background-position: right 0 bottom -27px;
+            }
+
+            .engineer {
+                background-image: url(../img/page-crew/item-4.png);
+                background-position: right 0 bottom -27px;
+            }
+
+            .item {
+
+
+                &__info {
+                    width: 327px;
+                    border-top: 1px solid #383B4B;
+                    padding-top: 74px;
+                }
+
+                &__info-subtitle {
+                    font-size: 16px;
+                    line-height: 18px;
+                    margin-bottom: 8px;
+                }
+
+                &__info-title {
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 16px;
+
+                }
+
+                &__info-text {
+                    font-size: 15px;
+                    line-height: 25px;
+                    width: 327px;
+
+                }
+            }
+
+            .dots {
+
+                &__menu-item {
+
+                    button {
+                        width: 10px;
+                        height: 10px;
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    //crew page
+
+    // tech page
+
+    .box.technology {
+        height: 710px;
+
+        .header {
+            margin-bottom: 24px;
+        }
+
+        .tech {
+
+            &__title {
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 2.7px;
+                margin-bottom: 32px;
+                text-align: center;
+
+                span {
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 2.7px;
+                }
+            }
+
+            &__dots {
+                top: 236px;
+
+            }
+
+            &__slider {
+                width: 100%;
+
+            }
+
+
+            &__slider-item {
+                height: 490px;
+                background-size: 375px 170px;
+
+            }
+        }
+
+        .dots {
+
+            &__menu {
+                flex-direction: row;
+                height: 40px;
+                width: 152px;
+            }
+
+            &__menu-item {
+
+                button {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 16px;
+                    line-height: 18px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+
+
+        .active {
+
+            &__item {
+                width: 40px;
+                height: 40px;
+
+            }
+        }
+
+        .vehicle {
+            background-image: url(../img/page-tech/item-1-tablet.jpg);
+            background-position: top;
+
+        }
+
+        .spaceport {
+            background-image: url(../img/page-tech/item-2-tablet.jpg);
+            background-position: top;
+        }
+
+        .capsule {
+            background-image: url(../img/page-tech/item-3-tablet.jpg);
+            background-position: top;
+        }
+
+        .item {
+
+            &__info {
+                width: 327px;
+                padding-top: 302px;
+            }
+
+            &__subtitle {
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 2.3625px;
+                margin-bottom: 9px;
+            }
+
+            &__title {
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            &__text {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+
+
+    }
+
+
+    // tech page
+
+}
+

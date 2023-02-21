@@ -1,0 +1,1123 @@
+@import url(https://fonts.googleapis.com/css?family=Bellefair:regular);
+@import url(https://fonts.googleapis.com/css?family=Barlow+Condensed:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Barlow:regular);
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.box {
+  max-width: 1440px;
+  height: 900px;
+  margin: 0 auto;
+  background-image: url(../img/bg/bg-home.jpg);
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 77px 0 165px;
+}
+
+.header {
+  padding: 40px 0 0 55px;
+  margin-bottom: 251px;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+.header__inner-menu {
+  display: flex;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(81.5485px);
+          backdrop-filter: blur(81.5485px);
+  width: 830px;
+  height: 96px;
+  padding: 38px 165px 0px 123px;
+  margin-left: auto;
+  position: relative;
+}
+.header__inner-menu .bbm {
+  display: none;
+}
+.header__inner-menu::before {
+  content: "";
+  width: 473px;
+  height: 1px;
+  position: absolute;
+  right: 100%;
+  transform: translateX(30px);
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  width: 542px;
+}
+.menu__list-item.active__link {
+  padding-bottom: 35px;
+  border-bottom: 3px solid #FFFFFF;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.menu__list-item:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.menu__list-item {
+  padding-bottom: 35px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.menu__list-numb {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  margin-right: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.menu__list-name {
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+}
+
+.space__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  padding-bottom: 88px;
+}
+.space__inner-info {
+  width: 445px;
+}
+.space__inner-btn {
+  box-sizing: content-box;
+  width: 274px;
+  height: 274px;
+  background-color: #FFFFFF;
+  background-clip: padding-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bellefair";
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
+  color: #0B0D17;
+  text-transform: uppercase;
+  border: 88px solid transparent;
+  transition: all 0.5s;
+  position: absolute;
+  bottom: 0;
+  right: -88px;
+}
+.space__inner-btn:hover {
+  border: 88px solid rgba(255, 255, 255, 0.1);
+}
+
+.info__subtitle {
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #D0D6F9;
+  margin-bottom: 24px;
+}
+.info__title {
+  font-family: "Bellefair";
+  font-size: 150px;
+  line-height: 172px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.info__text {
+  font-family: "Barlow";
+  font-size: 18px;
+  line-height: 32px;
+  color: #D0D6F9;
+}
+
+.box.destination {
+  background-image: url(../img/bg/bg-destination.jpg);
+  background-size: cover;
+}
+.box.destination .header {
+  margin-bottom: 76px;
+}
+.box.destination .dest__planet-title {
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 97px;
+}
+.box.destination .dest__planet-title span {
+  font-weight: 700;
+  color: #FFFFFF;
+  opacity: 0.25;
+  margin-right: 28px;
+}
+.box.destination .dest__planet-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box.destination .dest__planet-img {
+  width: 445px;
+  height: 445px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box.destination .dest__planet-info {
+  width: 445px;
+}
+.box.destination .moon {
+  background-image: url(../img/page-dest/moon.png);
+}
+.box.destination .mars {
+  background-image: url(../img/page-dest/mars.png);
+}
+.box.destination .europe {
+  background-image: url(../img/page-dest/europe.png);
+}
+.box.destination .titan {
+  background-image: url(../img/page-dest/titan.png);
+}
+.box.destination .info__nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 285px;
+}
+.box.destination .info__title {
+  font-family: "Bellefair";
+  font-size: 100px;
+  line-height: 115px;
+  margin-bottom: 14px;
+}
+.box.destination .info__text {
+  padding-bottom: 54px;
+  border-bottom: 1px solid #383B4B;
+  margin-bottom: 28px;
+}
+.box.destination .info__data {
+  display: flex;
+  width: 344px;
+  justify-content: space-between;
+  align-items: center;
+}
+.box.destination .menu__item {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  margin-bottom: 37px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.5s;
+}
+.box.destination .menu__item:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+.box.destination .item__active {
+  border-bottom: 3px solid #FFFFFF;
+}
+.box.destination .item__active:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+.box.destination .data-distance-title {
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #D0D6F9;
+  margin-bottom: 12px;
+}
+.box.destination .data-distance-text {
+  font-family: "Bellefair";
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.box.destination .data-time-title {
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #D0D6F9;
+  margin-bottom: 12px;
+}
+.box.destination .data-time-text {
+  font-family: "Bellefair";
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.planet__padding {
+  padding-left: 64px;
+}
+
+.box.crew {
+  background-image: url(../img/bg/bg-crew.png);
+  overflow: hidden;
+  background-size: cover;
+}
+.box.crew .header {
+  margin-bottom: 62px;
+}
+.box.crew .crew {
+  position: relative;
+}
+.box.crew .crew__title {
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: absolute;
+  top: 14px;
+}
+.box.crew .crew__title span {
+  font-weight: 700;
+  color: #FFFFFF;
+  opacity: 0.25;
+  margin-right: 24px;
+}
+.box.crew .crew__slider-item {
+  width: 100%;
+  height: 712px;
+  background-repeat: no-repeat;
+}
+.box.crew .crew__dots {
+  position: absolute;
+  bottom: 94px;
+  width: 132px;
+}
+.box.crew .crew .commander {
+  background-image: url(../img/page-crew/item-1.png);
+  background-position: right 0 bottom -10px;
+}
+.box.crew .crew .specialist {
+  background-image: url(../img/page-crew/item-2.png);
+  background-position: right 0 bottom 0;
+}
+.box.crew .crew .pilot {
+  background-image: url(../img/page-crew/item-3.png);
+  background-position: right 0 bottom -27px;
+}
+.box.crew .crew .engineer {
+  background-image: url(../img/page-crew/item-4.png);
+  background-position: right 0 bottom -27px;
+}
+.box.crew .crew .item__info {
+  padding-top: 202px;
+  width: 614px;
+}
+.box.crew .crew .item__info-subtitle {
+  font-family: "Bellefair";
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 15px;
+}
+.box.crew .crew .item__info-title {
+  font-family: "Bellefair";
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+.box.crew .crew .item__info-text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #D0D6F9;
+  width: 444px;
+}
+.box.crew .crew .dots__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box.crew .crew .dots__menu-item button {
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.17);
+  border: none;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.box.crew .crew .dots__menu-item:hover button {
+  background: rgba(255, 255, 255, 0.5);
+}
+.box.crew .crew .dots__menu-item.active__item button {
+  background: #FFFFFF;
+}
+
+.box.technology {
+  background-image: url(../img/bg/bg-tech.jpg);
+  background-size: cover;
+}
+.box.technology .header {
+  margin-bottom: 76px;
+}
+.box.technology .tech__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 1275px;
+  margin-left: 165px;
+}
+.box.technology .tech__title {
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: static;
+  top: 0px;
+  margin-bottom: 26px;
+}
+.box.technology .tech__title span {
+  font-weight: 700;
+  color: #FFFFFF;
+  opacity: 0.25;
+  margin-right: 24px;
+}
+.box.technology .tech__dots {
+  padding-top: 111px;
+}
+.box.technology .tech__slider {
+  width: 1115px;
+}
+.box.technology .tech__slider-item {
+  height: 527px;
+}
+.box.technology .dots__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 304px;
+}
+.box.technology .dots__menu-item button {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+  border-radius: 50%;
+  font-family: "Bellefair";
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  transition: all 0.2s;
+}
+.box.technology .dots__menu-item:hover button {
+  border: 1px solid #FFFFFF;
+}
+.box.technology .active__item {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.box.technology .active__item button {
+  color: #0B0D17;
+}
+.box.technology .vehicle {
+  background-image: url(../img/page-tech/item-1.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.box.technology .spaceport {
+  background-image: url(../img/page-tech/item-2.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.box.technology .capsule {
+  background-image: url(../img/page-tech/item-3.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.box.technology .item__info {
+  width: 470px;
+  padding-top: 111px;
+}
+.box.technology .item__subtitle {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #D0D6F9;
+  margin-bottom: 11px;
+}
+.box.technology .item__title {
+  font-family: "Bellefair";
+  font-size: 56px;
+  line-height: 64px;
+  color: #FFFFFF;
+  margin-bottom: 17px;
+}
+.box.technology .item__text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #D0D6F9;
+}
+
+@media (max-width: 800px) {
+  .box {
+    width: 768px;
+    height: 1024px;
+    background-image: url(../img/bg/bg-home-tablet.jpg);
+  }
+  .container {
+    max-width: 690px;
+    margin: 0 auto;
+  }
+  .header {
+    padding: 0 0 0 39px;
+    margin-bottom: 106px;
+  }
+  .header__inner-menu {
+    width: 450px;
+    padding: 39px 46px 0px 48px;
+    margin-left: auto;
+  }
+  .header__inner-menu .bbm {
+    display: none;
+  }
+  .header__inner-menu::before {
+    display: none;
+  }
+  .menu__list {
+    width: 354px;
+  }
+  .menu__list-item.active__link {
+    padding-bottom: 36px;
+  }
+  .menu__list-item {
+    padding-bottom: 36px;
+  }
+  .menu__list-numb {
+    display: none;
+  }
+  .menu__list-name {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  }
+  .space__inner {
+    display: block;
+    padding-bottom: 0px;
+    width: 450px;
+    margin: 0 auto;
+  }
+  .space__inner-info {
+    width: 450px;
+    text-align: center;
+  }
+  .space__inner-btn {
+    width: 242px;
+    height: 242px;
+    border: 80px solid transparent;
+    position: static;
+    margin: 0 auto;
+  }
+  .space__inner-btn:hover {
+    border: 80px solid rgba(255, 255, 255, 0.1);
+  }
+  .info__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+  .info__title {
+    font-size: 150px;
+    line-height: 150px;
+  }
+  .info__text {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 76px;
+  }
+  .box.destination .header {
+    margin-bottom: 40px;
+  }
+  .box.destination .dest__planet-title {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    margin-bottom: 60px;
+  }
+  .box.destination .dest__planet-title span {
+    margin-right: 19px;
+  }
+  .box.destination .dest__planet-inner {
+    display: block;
+    margin: 0 auto;
+  }
+  .box.destination .dest__planet-img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 53px;
+  }
+  .box.destination .dest__planet-info {
+    width: 573px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .box.destination .info__nav-menu {
+    width: 281px;
+    margin: 0 auto;
+  }
+  .box.destination .info__title {
+    font-size: 80px;
+    line-height: 92px;
+    margin-bottom: 8px;
+  }
+  .box.destination .info__text {
+    padding-bottom: 49px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .box.destination .info__data {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .box.destination .menu__item {
+    margin-bottom: 33px;
+  }
+  .info__data-distance {
+    width: 216px;
+  }
+  .info__data-time {
+    width: 216px;
+  }
+  .planet__padding {
+    padding-left: 0px;
+  }
+  .box.crew .header {
+    margin-bottom: 40px;
+  }
+  .box.crew .crew {
+    position: relative;
+  }
+  .box.crew .crew__title {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    position: static;
+    margin-bottom: 60px;
+  }
+  .box.crew .crew__title span {
+    margin-right: 16px;
+  }
+  .box.crew .crew__slider-item {
+    height: 804px;
+  }
+  .box.crew .crew__dots {
+    position: absolute;
+    bottom: 0px;
+    top: 306px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88px;
+  }
+  .box.crew .crew .commander {
+    background-image: url(../img/page-crew/item-1.png);
+    background-position: center bottom -40px;
+    background-size: 456px 572px;
+  }
+  .box.crew .crew .specialist {
+    background-image: url(../img/page-crew/item-2.png);
+    background-position: center bottom 0;
+    background-size: 369px 532px;
+  }
+  .box.crew .crew .pilot {
+    background-image: url(../img/page-crew/item-3.png);
+    background-position: center bottom 0;
+    background-size: 433px 532px;
+  }
+  .box.crew .crew .engineer {
+    background-image: url(../img/page-crew/item-4.png);
+    background-position: center bottom 0;
+    background-size: 539px 532px;
+  }
+  .box.crew .crew .item__info {
+    padding-top: 0px;
+    width: 592px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .box.crew .crew .item__info-subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+  .box.crew .crew .item__info-title {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 16px;
+  }
+  .box.crew .crew .item__info-text {
+    font-size: 16px;
+    line-height: 28px;
+    width: 592px;
+  }
+  .box.crew .crew .dots__menu-item button {
+    width: 10px;
+    height: 10px;
+  }
+  .box.technology {
+    background-image: url(../img/bg/bg-tech.jpg);
+  }
+  .box.technology .header {
+    margin-bottom: 40px;
+  }
+  .box.technology .tech__inner {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    position: relative;
+  }
+  .box.technology .tech__title {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    margin-bottom: 60px;
+  }
+  .box.technology .tech__title span {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    margin-right: 16px;
+  }
+  .box.technology .tech__dots {
+    padding-top: 0px;
+    position: absolute;
+    top: 366px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .box.technology .tech__slider {
+    width: 768px;
+  }
+  .box.technology .tech__slider-item {
+    height: 707px;
+  }
+  .box.technology .dots__menu {
+    flex-direction: row;
+    height: 60px;
+    width: 210px;
+  }
+  .box.technology .dots__menu-item {
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+  .box.technology .dots__menu-item button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+  }
+  .box.technology .active__item {
+    width: 60px;
+    height: 60px;
+  }
+  .box.technology .vehicle {
+    background-image: url(../img/page-tech/item-1-tablet.jpg);
+    background-position: top;
+  }
+  .box.technology .spaceport {
+    background-image: url(../img/page-tech/item-2-tablet.jpg);
+    background-position: top;
+  }
+  .box.technology .capsule {
+    background-image: url(../img/page-tech/item-3-tablet.jpg);
+    background-position: top;
+  }
+  .box.technology .item__info {
+    width: 458px;
+    padding-top: 470px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .box.technology .item__subtitle {
+    margin-bottom: 16px;
+  }
+  .box.technology .item__title {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 16px;
+  }
+  .box.technology .item__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 400px) {
+  .box {
+    width: 375px;
+    height: 667px;
+    background-image: url(../img/bg/bg-home-mobile.jpg);
+    background-size: cover;
+  }
+  .container {
+    max-width: 327px;
+  }
+  .header {
+    padding: 24px 0 0 33px;
+    margin-bottom: 48px;
+    position: relative;
+  }
+  .header__inner-menu {
+    position: absolute;
+    width: 254px;
+    height: 667px;
+    padding: 0;
+    margin-left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background: transparent;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    display: flex;
+    justify-content: flex-end;
+    transition: all 0.2s ease;
+  }
+  .header__inner-menu .bbm {
+    display: block;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    width: 24px;
+    height: 21px;
+    border-top: 3px solid #D0D6F9;
+    border-bottom: 3px solid #D0D6F9;
+    top: 34px;
+    right: 27px;
+  }
+  .header__inner-menu .bbm::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: #D0D6F9;
+    top: 7px;
+    left: 0;
+  }
+  .header__inner-logo img {
+    width: 40px;
+  }
+  .menu__list {
+    display: none;
+    padding: 118px 0 0 32px;
+  }
+  .menu__list-item.active__link {
+    border-bottom: 0px;
+    border-right: 3px solid #FFFFFF;
+    padding-bottom: 9px;
+  }
+  .menu__list-item {
+    padding: 16px 0 16px 0;
+    border-bottom: 0px;
+    border-right: 3px solid transparent;
+  }
+  .menu__list-numb {
+    display: none;
+  }
+  .menu__list-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .space__inner {
+    width: 327px;
+  }
+  .space__inner-info {
+    width: 327px;
+  }
+  .space__inner-btn {
+    width: 150px;
+    height: 150px;
+    border: 40px solid transparent;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+  }
+  .space__inner-btn:hover {
+    border: 40px solid rgba(255, 255, 255, 0.1);
+  }
+  .info__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-bottom: 16px;
+  }
+  .info__title {
+    font-size: 80px;
+    line-height: 100px;
+    margin-bottom: 16px;
+  }
+  .info__text {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  .box.destination {
+    height: 850px;
+  }
+  .box.destination .header {
+    margin-bottom: 24px;
+  }
+  .box.destination .dest__planet-title {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-bottom: 32px;
+  }
+  .box.destination .dest__planet-title span {
+    margin-right: 18px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .box.destination .dest__planet-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 26px;
+  }
+  .box.destination .dest__planet-info {
+    width: 327px;
+  }
+  .box.destination .info__nav-menu {
+    width: 234px;
+  }
+  .box.destination .info__title {
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 0px;
+  }
+  .box.destination .info__text {
+    padding-bottom: 32px;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 32px;
+  }
+  .box.destination .info__data {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .box.destination .info__data {
+    display: block;
+    width: 223px;
+  }
+  .box.destination .menu__item {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    padding-bottom: 8px;
+  }
+  .info__data-distance {
+    margin-bottom: 32px;
+  }
+  .box.crew {
+    height: 710px;
+  }
+  .box.crew .header {
+    margin-bottom: 24px;
+  }
+  .box.crew .crew__title {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .box.crew .crew__title span {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-right: 16px;
+  }
+  .box.crew .crew__slider-item {
+    height: 467px;
+    padding-top: 223px;
+  }
+  .box.crew .crew__dots {
+    top: 287px;
+    width: 88px;
+  }
+  .box.crew .crew .commander {
+    background-image: url(../img/page-crew/item-1.png);
+    background-position: center top 5px;
+    background-size: 177px;
+  }
+  .box.crew .crew .specialist {
+    background-image: url(../img/page-crew/item-2.png);
+    background-position: right 0 bottom 0;
+  }
+  .box.crew .crew .pilot {
+    background-image: url(../img/page-crew/item-3.png);
+    background-position: right 0 bottom -27px;
+  }
+  .box.crew .crew .engineer {
+    background-image: url(../img/page-crew/item-4.png);
+    background-position: right 0 bottom -27px;
+  }
+  .box.crew .crew .item__info {
+    width: 327px;
+    border-top: 1px solid #383B4B;
+    padding-top: 74px;
+  }
+  .box.crew .crew .item__info-subtitle {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+  .box.crew .crew .item__info-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+  .box.crew .crew .item__info-text {
+    font-size: 15px;
+    line-height: 25px;
+    width: 327px;
+  }
+  .box.crew .crew .dots__menu-item button {
+    width: 10px;
+    height: 10px;
+  }
+  .box.technology {
+    height: 710px;
+  }
+  .box.technology .header {
+    margin-bottom: 24px;
+  }
+  .box.technology .tech__title {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .box.technology .tech__title span {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .box.technology .tech__dots {
+    top: 236px;
+  }
+  .box.technology .tech__slider {
+    width: 100%;
+  }
+  .box.technology .tech__slider-item {
+    height: 490px;
+    background-size: 375px 170px;
+  }
+  .box.technology .dots__menu {
+    flex-direction: row;
+    height: 40px;
+    width: 152px;
+  }
+  .box.technology .dots__menu-item button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+  .box.technology .active__item {
+    width: 40px;
+    height: 40px;
+  }
+  .box.technology .vehicle {
+    background-image: url(../img/page-tech/item-1-tablet.jpg);
+    background-position: top;
+  }
+  .box.technology .spaceport {
+    background-image: url(../img/page-tech/item-2-tablet.jpg);
+    background-position: top;
+  }
+  .box.technology .capsule {
+    background-image: url(../img/page-tech/item-3-tablet.jpg);
+    background-position: top;
+  }
+  .box.technology .item__info {
+    width: 327px;
+    padding-top: 302px;
+  }
+  .box.technology .item__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    margin-bottom: 9px;
+  }
+  .box.technology .item__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .box.technology .item__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}/*# sourceMappingURL=style.css.map */
