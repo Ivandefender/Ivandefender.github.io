@@ -830,15 +830,16 @@ li {
     margin-left: 0;
     right: 0;
     top: 0;
-    z-index: 999;
+    z-index: 998;
     background: transparent;
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
-    display: flex;
-    justify-content: flex-end;
-    transition: all 0.2s ease;
+    display: none;
   }
-  .header__inner-menu .bbm {
+  .header__inner-logo img {
+    width: 40px;
+  }
+  .bbm {
     display: block;
     position: absolute;
     border: none;
@@ -849,8 +850,9 @@ li {
     border-bottom: 3px solid #D0D6F9;
     top: 34px;
     right: 27px;
+    z-index: 999;
   }
-  .header__inner-menu .bbm::before {
+  .bbm::before {
     display: block;
     position: absolute;
     content: "";
@@ -860,12 +862,12 @@ li {
     top: 7px;
     left: 0;
   }
-  .header__inner-logo img {
-    width: 40px;
-  }
   .menu__list {
     display: none;
     padding: 118px 0 0 32px;
+    width: 254px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .menu__list-item.active__link {
     border-bottom: 0px;
@@ -979,7 +981,7 @@ li {
     margin-bottom: 32px;
   }
   .box.crew {
-    height: 710px;
+    height: 720px;
   }
   .box.crew .header {
     margin-bottom: 24px;
@@ -1012,15 +1014,18 @@ li {
   }
   .box.crew .crew .specialist {
     background-image: url(../img/page-crew/item-2.png);
-    background-position: right 0 bottom 0;
+    background-position: center top 7px;
+    background-size: 150px;
   }
   .box.crew .crew .pilot {
     background-image: url(../img/page-crew/item-3.png);
-    background-position: right 0 bottom -27px;
+    background-position: center top 15px;
+    background-size: 177px;
   }
   .box.crew .crew .engineer {
     background-image: url(../img/page-crew/item-4.png);
-    background-position: right 0 bottom -27px;
+    background-position: center top 50px;
+    background-size: 177px;
   }
   .box.crew .crew .item__info {
     width: 327px;

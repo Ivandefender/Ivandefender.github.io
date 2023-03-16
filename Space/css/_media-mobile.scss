@@ -26,49 +26,54 @@
             margin-left: 0;
             right: 0;
             top: 0;
-            z-index: 999;
+            z-index: 998;
             background: transparent;
-            backdrop-filter: none;
-            display: flex;
-            justify-content: flex-end;
-            transition: all 0.2s ease;
-            .bbm{
-                display: block;
-                position: absolute;
-                border: none;
-                background-color: transparent;
-                width: 24px;
-                height: 21px;
-                border-top: 3px solid #D0D6F9;
-                border-bottom: 3px solid #D0D6F9;
-                top: 34px;
-                right: 27px;
-            }
-            .bbm::before{
-                display: block;
-                position: absolute;
-                content: '';
-                width: 24px;
-                height: 2px;
-                background-color: #D0D6F9;
-                top: 7px;
-                left: 0;
-                
-            }
+            backdrop-filter: none;  
+            display: none;
+            // transition: all 0.6s ease;
+
         }
+
+
 
         &__inner-logo img {
             width: 40px;
         }
     }
 
+    .bbm {
+        display: block;
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        width: 24px;
+        height: 21px;
+        border-top: 3px solid #D0D6F9;
+        border-bottom: 3px solid #D0D6F9;
+        top: 34px;
+        right: 27px;
+        z-index: 999;
+    }
+
+    .bbm::before {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 24px;
+        height: 2px;
+        background-color: #D0D6F9;
+        top: 7px;
+        left: 0;
+
+    }
+
     .menu {
-
-
         &__list {
             display: none;
             padding: 118px 0 0 32px;
-            
+            width: 254px;
+            margin-left: 0;
+            margin-right: 0;
         }
 
         &__list-item.active__link {
@@ -92,7 +97,7 @@
             font-size: 16px;
             line-height: 19px;
             letter-spacing: 2.7px;
-            
+
         }
     }
 
@@ -243,7 +248,7 @@
     //crew page
 
     .box.crew {
-        height: 710px;
+        height: 720px;
 
         .header {
             margin-bottom: 24px;
@@ -287,17 +292,20 @@
 
             .specialist {
                 background-image: url(../img/page-crew/item-2.png);
-                background-position: right 0 bottom 0;
+                background-position: center top 7px;
+                background-size: 150px;
             }
 
             .pilot {
                 background-image: url(../img/page-crew/item-3.png);
-                background-position: right 0 bottom -27px;
+                background-position: center top 15px;
+                background-size: 177px;
             }
 
             .engineer {
                 background-image: url(../img/page-crew/item-4.png);
-                background-position: right 0 bottom -27px;
+                background-position: center top 50px;
+                background-size: 177px;
             }
 
             .item {
@@ -468,4 +476,3 @@
     // tech page
 
 }
-
